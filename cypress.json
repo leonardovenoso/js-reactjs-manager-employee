@@ -1,4 +1,4 @@
 {
   "componentFolder": "cypress/component",
-  "testFiles": "**/*.spec.{js,ts,jsx,tsx}"
+  "testFiles": "**/*.spec.js"
 }
