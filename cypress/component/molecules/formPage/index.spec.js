@@ -1,6 +1,6 @@
 import React from 'react';
 import { mount } from '@cypress/react';
-import FormPage from '../../../../pages/components/molecules/formPage';
+import FormPage from '../../../../pages/components/pages/formPage';
 
 describe('Form page', () => {
 
