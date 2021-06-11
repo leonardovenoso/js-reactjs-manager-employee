@@ -1,4 +1,5 @@
 module.exports = {
-  cache: false
+  cache: false,
+  watch: true
 };
 
