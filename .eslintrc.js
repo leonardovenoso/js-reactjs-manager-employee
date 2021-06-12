@@ -5,7 +5,8 @@ module.exports = {
   },
   "extends": [
     "eslint:recommended",
-    "plugin:react/recommended"
+    "plugin:react/recommended",
+    "nextjs"
   ],
   "parserOptions": {
     "ecmaFeatures": {
@@ -32,5 +33,4 @@ module.exports = {
   "env": {
     "cypress/globals": true
   },
-  "extends": ["nextjs"]
 };
