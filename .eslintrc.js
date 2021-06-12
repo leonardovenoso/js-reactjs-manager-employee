@@ -22,6 +22,9 @@ module.exports = {
     "react/react-in-jsx-scope": "off",
     "no-param-reassign": "off",
     "no-console": "off",
+    "no-new-wrappers": "off",
+    "no-shadow": "off",
+    "eqeqeq": "off"
   },
   "globals": {
     "React": "writable"
