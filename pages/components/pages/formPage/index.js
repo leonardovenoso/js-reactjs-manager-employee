@@ -35,7 +35,9 @@ const FormPage = () => {
         {showResults && <Title size="1.2em">Subordinates of {search}</Title>}
         {subordinates.length > 0 &&
           subordinates.map((subordinate, i) => <p key={i}>{subordinate}</p>)}
-        {showResults && subordinates.length === 0 && <p>No subordinates found</p>}
+        {showResults && subordinates.length === 0 && (
+          <p>No subordinates found</p>
+        )}
       </Container>
     </Container>
   );
