@@ -8,7 +8,7 @@ const SearchForm = () => {
   const inputRef = useRef(null);
   const updateSearch = () => {
     FormState.update(state => {
-      state.search = inputRef.current.value;
+      state.search = new String(inputRef.current.value);
     });
   };
 
