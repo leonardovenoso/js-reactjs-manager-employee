@@ -24,7 +24,7 @@ describe('Form page', () => {
         cy.contains('Leanna Hogg');
       });
 
-      xit('shows John Hartman\'s indirect subordinates', () => {
+      it('shows John Hartman\'s indirect subordinates', () => {
         mount(<FormPage />);
         cy.get('input').type('John Hartman');
         cy.get('button').click();
@@ -41,8 +41,14 @@ describe('Form page', () => {
 
         //Lynn Haigh
         cy.contains('Nylah Riddle');
-        cy.get('li:contains("Aila Hodgson)').should('length', 1);
       });
+
+      it('does not show duplicates', () => {
+        mount(<FormPage />);
+        cy.get('input').type('John Hartman');
+        cy.get('button').click();
+        cy.get('p').contains('Aila Hodgson').should('length', 1);
+      })
 
     });
 
